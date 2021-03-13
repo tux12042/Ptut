@@ -1,0 +1,417 @@
+@font-face {
+    font-family: "light";
+    src: url(../medias/fonts/Rubik-Light.ttf);
+}
+
+@font-face {
+    font-family: "regular";
+    src: url(../medias/fonts/Rubik-Regular.ttf);
+}
+
+@font-face {
+    font-family: "bold";
+    src: url(../medias/fonts/Rubik-Bold.ttf);
+}
+
+* {
+    font-family: "regular";
+    color: #212449;
+}
+
+body {
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+/*ENTETE*************************************************/
+header {
+    width: 100%;
+    height: 5rem;
+
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    top: 0;
+
+    z-index: 10;
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+header:hover {
+    background-color: rgba(255, 255, 255, 1);
+}
+
+header>article>a {
+    text-decoration: none;
+    font-family: "bold";
+}
+
+header>article>a {
+    text-decoration: none;
+}
+
+header>article>a:hover {
+    text-decoration: underline;
+}
+
+header>article>a>img {
+    width: 3rem;
+    margin: 0;
+}
+
+header>article>img {
+    width: 2.5rem;
+}
+
+.barre {
+    width: 0.1rem;
+    height: 2.5rem;
+    background-color: #212449;
+}
+
+.onglets {
+    position: absolute;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+    left: 2rem;
+    width: 45%;
+}
+
+.deconnexion {
+    position: absolute;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+    width: 20%;
+    right: 2rem;
+}
+
+/*BOUTON*******************************************************/
+
+.button {
+    margin-top: 7rem;
+
+    display: flex;
+    flex-direction: row;
+}
+
+button {
+    color: white;
+    border: 0;
+    font-family: "bold";
+    padding: 1rem;
+    width: 16rem;
+}
+
+button:nth-of-type(1) {
+    background-color: #B6D37B;
+}
+
+button:nth-of-type(2) {
+    background-color: #E8917B;
+}
+
+button:nth-of-type(3) {
+    background-color: #7BA3D7;
+}
+
+button:nth-of-type(4) {
+    background-color: #F9E59A;
+}
+
+button:nth-of-type(5) {
+    background-color: #64666A;
+}
+
+
+/*Eco-citoyenneté***************************************/
+.eco-citoyenneté {
+    position: absolute;
+    top: 10rem;
+    width: 100%;
+}
+
+.eco-citoyenneté>article:nth-of-type(1) {
+    background-color: #B6D37B;
+    width: 100%;
+    height: 25rem;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.eco-citoyenneté>article:nth-of-type(1)>p {
+    color: white;
+    font-family: "bold";
+    font-size: 5rem;
+}
+
+.eco-citoyenneté>article:nth-of-type(1)>img {
+    margin: 0 2rem 0 0;
+}
+
+
+.eco-citoyenneté>article:nth-of-type(2) {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 50rem;
+    margin: 4rem 0 2rem 0;
+}
+
+.eco-citoyenneté>article:nth-of-type(2)>a {
+    border: #B6D37B 0.2rem solid;
+    color: #B6D37B;
+    font-family: "bold";
+    font-size: 2rem;
+    text-decoration: none;
+
+    padding: 1rem;
+    width: 70vw;
+    margin-bottom: 2rem;
+}
+
+.eco-citoyenneté>article:nth-of-type(2)>a>img {
+    margin: 0 2rem 0 2rem;
+}
+
+/*dynamisation***************************************/
+.dynamisation {
+    position: absolute;
+    top: 10rem;
+    width: 100%;
+
+    display: none;
+}
+
+.dynamisation>article:nth-of-type(1) {
+    background-color: #E8917B;
+    width: 100%;
+    height: 25rem;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.dynamisation>article:nth-of-type(1)>p {
+    color: white;
+    font-family: "bold";
+    font-size: 5rem;
+}
+
+.dynamisation>article:nth-of-type(1)>img {
+    margin: 0 2rem 0 0;
+}
+
+
+.dynamisation>article:nth-of-type(2) {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 50rem;
+    margin: 4rem 0 2rem 0;
+}
+
+.dynamisation>article:nth-of-type(2)>a {
+    border: #E8917B 0.2rem solid;
+    color: #E8917B;
+    font-family: "bold";
+    font-size: 2rem;
+    text-decoration: none;
+
+    padding: 1rem;
+    width: 70vw;
+    margin-bottom: 2rem;
+}
+
+.dynamisation>article:nth-of-type(2)>a>img {
+    margin: 0 2rem 0 2rem;
+}
+
+/*lien-inter-générationnel***************************************/
+.lien-inter-générationnel {
+    position: absolute;
+    top: 10rem;
+    width: 100%;
+
+    display: none;
+}
+
+.lien-inter-générationnel>article:nth-of-type(1) {
+    background-color: #7BA3D7;
+    width: 100%;
+    height: 25rem;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.lien-inter-générationnel>article:nth-of-type(1)>p {
+    color: white;
+    font-family: "bold";
+    font-size: 5rem;
+}
+
+.lien-inter-générationnel>article:nth-of-type(1)>img {
+    margin: 0 2rem 0 0;
+}
+
+
+.lien-inter-générationnel>article:nth-of-type(2) {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 50rem;
+    margin: 4rem 0 2rem 0;
+}
+
+.lien-inter-générationnel>article:nth-of-type(2)>a {
+    border: #7BA3D7 0.2rem solid;
+    color: #7BA3D7;
+    font-family: "bold";
+    font-size: 2rem;
+    text-decoration: none;
+
+    padding: 1rem;
+    width: 70vw;
+    margin-bottom: 2rem;
+}
+
+.lien-inter-générationnel>article:nth-of-type(2)>a>img {
+    margin: 0 2rem 0 2rem;
+}
+
+/*tourisme***************************************/
+.tourisme {
+    position: absolute;
+    top: 10rem;
+    width: 100%;
+
+    display: none;
+}
+
+.tourisme>article:nth-of-type(1) {
+    background-color: #F9E59A;
+    width: 100%;
+    height: 25rem;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.tourisme>article:nth-of-type(1)>p {
+    color: white;
+    font-family: "bold";
+    font-size: 5rem;
+}
+
+.tourisme>article:nth-of-type(1)>img {
+    margin: 0 2rem 0 0;
+}
+
+
+.tourisme>article:nth-of-type(2) {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 50rem;
+    margin: 4rem 0 2rem 0;
+}
+
+.tourisme>article:nth-of-type(2)>a {
+    border: #F9E59A 0.2rem solid;
+    color: #F9E59A;
+    font-family: "bold";
+    font-size: 2rem;
+    text-decoration: none;
+
+    padding: 1rem;
+    width: 70vw;
+    margin-bottom: 2rem;
+}
+
+.tourisme>article:nth-of-type(2)>a>img {
+    margin: 0 2rem 0 2rem;
+}
+
+/*economie***************************************/
+.economie {
+    position: absolute;
+    top: 10rem;
+    width: 100%;
+
+    display: none;
+}
+
+.economie>article:nth-of-type(1) {
+    background-color: #64666A;
+    width: 100%;
+    height: 25rem;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.economie>article:nth-of-type(1)>p {
+    color: white;
+    font-family: "bold";
+    font-size: 5rem;
+}
+
+.economie>article:nth-of-type(1)>img {
+    margin: 0 2rem 0 0;
+}
+
+
+.economie>article:nth-of-type(2) {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 50rem;
+    margin: 4rem 0 2rem 0;
+}
+
+.economie>article:nth-of-type(2)>a {
+    border: #64666A 0.2rem solid;
+    color: #64666A;
+    font-family: "bold";
+    font-size: 2rem;
+    text-decoration: none;
+
+    padding: 1rem;
+    width: 70vw;
+    margin-bottom: 2rem;
+}
+
+.economie>article:nth-of-type(2)>a>img {
+    margin: 0 2rem 0 2rem;
+}

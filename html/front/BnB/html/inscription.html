@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/inscription_style.css">
+    <title>Bougez notre Bassigny - BnB</title>
+</head>
+
+<body>
+
+
+    <header id="entete">
+        <article class="onglets">
+            <a href="../index.html"><img src="../medias/images/logos/logos_BnB.PNG" alt="BnB_logo"></a>
+            <div class="barre"></div>
+            <a href="../index.html">ACCUEIL</a>
+            <a href="le_collectif.html">COLLECTIF</a>
+            <a href="">CALENDRIER</a>
+        </article>
+        <article class="deconnexion">
+            <a href="connexion.html">Connexion</a>
+            <a href="inscription.html">Inscription</a>
+            <img src="../medias/images/logos/logo_deco.PNG" alt="Bnb_logo_deco">
+        </article>
+    </header>
+<form action="../../../traitement/creationCompte.php" method="post">
+    <section class="formulaire">
+        <article class="connecter">
+            <p>S'inscrire</p>
+            <p>Je possède déjà un compte, <a href="connexion.html">se connecter</a>
+            </p>
+        </article>
+        
+        <input required name="nom" type="text" class="nom" placeholder="Nom">
+        <input required name="prenom" type="text" class="prenom" placeholder="Prénom">
+        <input required name="num" type="text" class="tel" placeholder="Numéro de téléphone">
+        <input required name="mail" type="email" class="email" placeholder="E-mail">
+        <input required name="mdp" type="password" class="mdp" placeholder="Mot de passe">
+        <input required name="mdp_verif" type="password" class="verif_mdp" placeholder="Répéter le mot de passe">
+        <input type="hidden" id="recaptchaResponse" name="recaptcha-response">
+
+        <article class="btn">
+        <input type="submit" value="Créer mon compte" class="bouton">
+        </article>
+   
+    </section>
+ </form>
+ <script src="https://www.google.com/recaptcha/api.js?render=6LcVDlQaAAAAANFXxGJ3CEKC8c3vN203blKMQx-I"></script>
+<script>
+grecaptcha.ready(function() {
+    grecaptcha.execute('6LcVDlQaAAAAANFXxGJ3CEKC8c3vN203blKMQx-I', {action: 'homepage'}).then(function(token) {
+        document.getElementById('recaptchaResponse').value = token
+    });
+});
+</script>
+
+</body>
+
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/connexion_style.css">
+    <title>Bougez notre Bassigny - BnB</title>
+</head>
+
+<body>
+
+
+    <header id="entete">
+        <article class="onglets">
+            <a href="../index.html"><img src="../medias/images/logos/logos_BnB.PNG" alt="BnB_logo"></a>
+            <div class="barre"></div>
+            <a href="../index.html">ACCUEIL</a>
+            <a href="le_collectif.html">COLLECTIF</a>
+            <a href="">CALENDRIER</a>
+        </article>
+        <article class="deconnexion">
+            <a href="connexion.html">Connexion</a>
+            <a href="inscription.html">Inscription</a>
+            <img src="../medias/images/logos/logo_deco.PNG" alt="Bnb_logo_deco">
+        </article>
+    </header>
+
+    <form action="../../../traitement/connexionCompte.php" method="post">
+    <section class="formulaire">
+        <article class="connecter">
+            <p>Se connecter</p>
+            <p>Je n'ai pas de compte, <a href="inscription.html">s'inscrire</a>
+            </p>
+        </article>
+        <input name="mail" required type="email" class="email" placeholder="E-mail">
+        <input name="mdp" required type="password" class="mdp" placeholder="Mot de passe">
+        <a href="" class="mdp_perdu">J'ai perdu mon mot de passe</a>
+        <article class="btn">
+        <input type="submit" value="Je me connecte" class="bouton">
+        </article>
+    </section>
+</form>
+</body>
+
+</html>

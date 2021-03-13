@@ -1,0 +1,202 @@
+@font-face {
+    font-family: "light";
+    src: url(../medias/fonts/Rubik-Light.ttf);
+}
+
+@font-face {
+    font-family: "regular";
+    src: url(../medias/fonts/Rubik-Regular.ttf);
+}
+
+@font-face {
+    font-family: "bold";
+    src: url(../medias/fonts/Rubik-Bold.ttf);
+}
+
+* {
+    font-family: "regular";
+    color: #212449;
+}
+
+body {
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+@media (min-width: 1280px) {
+/*ENTETE*************************************************/
+header {
+    width: 100%;
+    height: 5rem;
+
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    top: 0;
+
+    z-index: 10;
+    background-color: rgba(255, 255, 255, 1);
+}
+
+header>article>a {
+    text-decoration: none;
+    font-family: "bold";
+}
+
+header>article>a {
+    text-decoration: none;
+}
+
+header>article>a:hover {
+    text-decoration: underline;
+}
+
+header>article>a>img {
+    width: 3rem;
+    margin: 0;
+}
+
+header>article>img {
+    width: 2.5rem;
+}
+
+.barre {
+    width: 0.1rem;
+    height: 2.5rem;
+    background-color: #212449;
+}
+
+.onglets {
+    position: absolute;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+    left: 2rem;
+    width: 45%;
+}
+
+.deconnexion {
+    position: absolute;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+    width: 20%;
+    right: 2rem;
+}
+
+
+/*FORMULAIRE****************************************************/
+.formulaire {
+    width: 70%;
+
+    margin: 5rem auto auto auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.infos>img{
+    border: solid #212449 0.2rem;
+    border-radius: 50%;
+    width: 3rem;
+    height: 3rem;
+
+    margin: 0 1rem 1rem 0;
+    display: flex;
+    flex-direction: row;
+    justify-self: flex-end;
+    align-self: center;
+}
+.infos>a{
+    margin-left: 1rem;
+}
+
+.infos{
+    display: grid;
+    align-items: center;
+    grid-template-columns: 15rem 35rem;
+    grid-template-rows: 3.25rem 3.25rem 3.25rem 3.25rem 3.25rem;
+
+    border-bottom: solid 0.1rem #BADCD2;
+    padding: 2rem 0 2rem 0;
+}
+
+.motdepasse{
+    display: grid;
+    align-items: center;
+    grid-template-columns: 15rem 35rem;
+    grid-template-rows: 3.25rem 3.25rem 3.25rem;
+
+    border-bottom: solid 0.1rem #BADCD2;
+    padding: 2rem 0 2rem 0;
+}
+
+.motdepasse>label{
+    height: 3rem;
+    align-items: center;
+}
+
+input {
+    width: 80%;
+    border: solid #BADCD2 0.1rem;
+    padding: 0.75rem;
+    font-size: 0.9rem;
+
+    margin: 0rem 6rem 0rem 1rem;
+
+    display: flex;
+    align-items: center;
+}
+
+label{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+
+    font-family: "bold";
+
+    margin-right: 1rem;
+}
+
+
+.bouton {
+    padding: 0.4rem;
+    width: 23rem;
+    margin: 2rem 0 0 0;
+
+    color: #212449;
+    font-family: "bold";
+    border: #212449 solid 0.1rem;
+    border-radius: 5px;
+    background-color: white;
+
+    grid-column-start: 2;
+    grid-column-end: 3;
+    justify-self: flex-end;
+}
+
+.bouton:hover {
+    background-color: #212449;
+    color: white;
+}
+
+
+.btn {
+    display: grid;
+    grid-template-columns: 15rem 27rem;
+    grid-template-rows: 4rem;
+}
+}

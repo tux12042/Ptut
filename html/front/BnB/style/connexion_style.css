@@ -1,0 +1,165 @@
+@font-face {
+    font-family: "light";
+    src: url(../medias/fonts/Rubik-Light.ttf);
+}
+
+@font-face {
+    font-family: "regular";
+    src: url(../medias/fonts/Rubik-Regular.ttf);
+}
+
+@font-face {
+    font-family: "bold";
+    src: url(../medias/fonts/Rubik-Bold.ttf);
+}
+
+* {
+    font-family: "regular";
+    color: #212449;
+}
+
+body {
+    margin: 0;
+    background-color: #BADCD2;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+@media (min-width: 1280px) {
+/*ENTETE*************************************************/
+header {
+    width: 100%;
+    height: 5rem;
+
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    top: 0;
+
+    z-index: 10;
+    background-color: rgba(255, 255, 255, 1);
+}
+
+header>article>a {
+    text-decoration: none;
+    font-family: "bold";
+}
+
+header>article>a {
+    text-decoration: none;
+}
+
+header>article>a:hover {
+    text-decoration: underline;
+}
+
+header>article>a>img {
+    width: 3rem;
+    margin: 0;
+}
+
+header>article>img {
+    width: 2.5rem;
+}
+
+.barre {
+    width: 0.1rem;
+    height: 2.5rem;
+    background-color: #212449;
+}
+
+.onglets {
+    position: absolute;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+    left: 2rem;
+    width: 45%;
+}
+
+.deconnexion {
+    position: absolute;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+    width: 20%;
+    right: 2rem;
+}
+
+
+/*FORMULAIRE****************************************************/
+.formulaire {
+    background-color: white;
+    width: 60%;
+    height: 100vh;
+
+    margin: auto;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.connecter {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    margin: 10rem 0 0 0;
+    padding: 2rem 6rem 0rem 6rem;
+}
+
+.connecter>p:nth-of-type(1) {
+    font-family: "bold";
+    font-size: 1.5rem;
+}
+
+input {
+    border: solid #BADCD2 0.2rem;
+    padding: 1rem;
+
+    margin: 0rem 6rem 1rem 6rem;
+}
+
+.mdp_perdu {
+    display: flex;
+    flex-direction: row-reverse;
+
+    padding: 1rem 0 2rem 0;
+    margin-right: 6rem;
+}
+
+.bouton {
+    padding: 0.4rem;
+    width: 14rem;
+    margin: 6rem 6rem 0 0;
+
+    color: #212449;
+    font-family: "bold";
+    border: #212449 solid 0.1rem;
+    border-radius: 5px;
+    background-color: white;
+}
+
+.bouton:hover {
+    background-color: #212449;
+    color: white;
+}
+
+
+.btn {
+    display: flex;
+    flex-direction: row-reverse;
+}
+}
